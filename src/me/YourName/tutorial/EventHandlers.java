@@ -42,7 +42,7 @@ public class EventHandlers implements Listener {
 	}
 	
 	@EventHandler
-	public void Servers(InventoryClickEvent event) {
+	public void onClick(InventoryClickEvent event) {
 		Player p = (Player) event.getWhoClicked();
 
 		if (event.getInventory().getName().equals(Tutorial.shop.getName())) {
